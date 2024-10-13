@@ -9,17 +9,17 @@ class HotelSerializer(serializers.ModelSerializer):
         fields = '__all__'
         depth = 1
 
-class HotelCategorySerializer(serializers.Serializer):
+class HotelCategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = HotelCategory
         fields = '__all__'
 
-class VideoSerializer(serializers.Serializer):
+class VideoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Video
         fields = '__all__'
 
-class TurSerializer(serializers.Serializer):
+class TurSerializer(serializers.ModelSerializer):
     class Meta:
         model = Tur
         fields = '__all__'
